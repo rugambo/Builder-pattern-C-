@@ -13,9 +13,9 @@ namespace Builder_pattern_C_
         public int Level;
         public bool joinedGame;
 
-        public Player(string _Name)
+        public Player(PlayerBuilder builder)
         {
-            Name = _Name;
+            Name = builder.Name;
             Level = 0;  
             joinedGame = false;
         }
